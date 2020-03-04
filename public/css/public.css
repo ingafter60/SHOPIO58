@@ -5,7 +5,22 @@ body{
    color: #424242;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .no-margin{
-margin-top:0;
-margin-bottom:0;
+   margin-top:0;
+   margin-bottom:0;
 }
+
+* {
+   box-sizing: border-box;
+   outline: none;
+}
+
+form .form-control {
+   height: 33px;
+   border: 1px solid #ccc;
+   border-left-color: rgb(204, 204,204);
+   border-left-style: solid;
+   border-left: none;
+}
+

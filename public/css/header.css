@@ -13,3 +13,50 @@
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+
+.msf {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.msf .form-section {
+    float: left;
+    position: relative;
+}
+
+.msf .control-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.msf .c-selector {
+    font-family: sans-serif;
+    border-radius: 3px 0 0 3px;
+    text-decoration: none;
+    color: #646464;
+    background: #ededed;
+    line-height: 38px;
+    padding: 0 8px;
+    display: inline-block;
+    font-size: 13px;
+    border: 1px solid #ccc;
+}
+
+.msf .section-mid {
+    width: 50%;
+}
+
+.msf .control-text {
+    border-radius: none;
+    width: 100%;
+}
+
+.msf .control-submit{
+    color: white;
+    background: orange;
+    border-radius: 0 3px 3px 0;
+    border: none;
+}

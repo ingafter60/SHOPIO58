@@ -133,3 +133,12 @@ The Laravel framework is open-source software licensed under the [MIT license](h
    > - new file:   resources/views/layouts/default.blade.php
    > - new file:   resources/views/partials/header.blade.php
    > - modified:   routes/web.php
+
+   #### Creating header part 2
+
+   > - modified:   public/css/header.css
+   > - modified:   public/css/public.css
+   > - modified:   resources/views/layouts/default.blade.php
+   > - modified:   resources/views/partials/header.blade.php
+   > - public/css/grid.css
+   > - public/fa/
