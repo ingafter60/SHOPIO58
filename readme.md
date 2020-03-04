@@ -80,3 +80,21 @@ The Laravel framework is open-source software licensed under the [MIT license](h
    > - git commit -m "Initial commit: Laravel project 'SHOPIO58' created"
    > - git remote add origin git@github.com:ingafter60/SHOPIO58.git
    > - git push -u origin master
+
+## 2. Modify the app and create user authentication
+
+   #### Modify the app to redirect to home
+   > - move index and .htaccess from public to the app root
+   > - auth: modify login and register controller to redirect to home
+   > - config/filesystems: add to public path
+   > - middleware/Authentication: change the route to '/'
+
+   #### Create database
+
+   > - config/database: add db credentials
+   > - providers/AppServiceProvider: add max length of table field to 191
+   > - Create db
+   > - Create migration
+   > - create user auth
+   > - register/login a new user
+   > - :-)
