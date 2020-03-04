@@ -98,3 +98,25 @@ The Laravel framework is open-source software licensed under the [MIT license](h
    > - create user auth
    > - register/login a new user
    > - :-)
+
+   #### Git Repo
+
+   > - renamed:    public/.htaccess -> .htaccess
+   > - modified:   app/Http/Controllers/Auth/LoginController.php
+   > - modified:   app/Http/Controllers/Auth/RegisterController.php
+   > - new file:   app/Http/Controllers/HomeController.php
+   > - modified:   app/Http/Middleware/Authenticate.php
+   > - modified:   app/Providers/AppServiceProvider.php
+   > - modified:   config/database.php
+   > - modified:   config/filesystems.php
+   > - renamed:    public/index.php -> index.php
+   > - modified:   readme.md
+   > - new file:   resources/views/auth/login.blade.php
+   > - new file:   resources/views/auth/passwords/email.blade.php
+   > - new file:   resources/views/auth/passwords/reset.blade.php
+   > - new file:   resources/views/auth/register.blade.php
+   > - new file:   resources/views/auth/verify.blade.php
+   > - new file:   resources/views/home.blade.php
+   > - new file:   resources/views/layouts/app.blade.php
+   > - modified:   routes/web.php
+   > - modified:   server.php
