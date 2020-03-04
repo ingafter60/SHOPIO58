@@ -81,7 +81,7 @@ The Laravel framework is open-source software licensed under the [MIT license](h
    > - git remote add origin git@github.com:ingafter60/SHOPIO58.git
    > - git push -u origin master
 
-## 2. Modify the app and create user authentication
+### 2. Modify the app and create user authentication
 
    #### Modify the app to redirect to home
    > - move index and .htaccess from public to the app root
@@ -120,3 +120,16 @@ The Laravel framework is open-source software licensed under the [MIT license](h
    > - new file:   resources/views/layouts/app.blade.php
    > - modified:   routes/web.php
    > - modified:   server.php
+
+### 3. Creating Header and Footer
+
+   #### Creating header part 1
+
+   > - modified:   .gitignore
+   > - modified:   app/Http/Controllers/HomeController.php
+   > - new file:   public/css/header.css
+   > - new file:   public/css/public.css
+   > - modified:   resources/views/home.blade.php
+   > - new file:   resources/views/layouts/default.blade.php
+   > - new file:   resources/views/partials/header.blade.php
+   > - modified:   routes/web.php
