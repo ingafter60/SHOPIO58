@@ -35,6 +35,12 @@
             <ul class="header-nav">
                <li class='relative'>
                   <a href="#" class='categories-toggle'>Categories <i class="fa fa-caret-down"></i></a>
+                  <div class="a-list">
+                     <a href="" class="list-item">Electronics</a>
+                     <a href="" class="list-item">Desktops</a>
+                     <a href="" class="list-item">Laptops</a>
+                     <a href="" class="list-item">Watches</a>
+                  </div>
                </li>
                <li><a href="">Home</a></li>
                <li><a href="">Track order</a></li>
@@ -49,6 +55,22 @@
                   <span class="header-nav-line header-nav-line-1">welcome, Sign in</span>
                   <span class="header-nav-line header-nav-line-2">Account & lists <i class="fa fa-caret-down" style="font-size:13px;"></i></span>
                   </a>
+                  <div class="a-list">
+                     <a href="" class="list-item">Account</a>
+                     <a href="" class="list-item">Wish list</a>
+                     @if(Auth::check())
+                        <a href="{{route('logout')}}" class="list-item" onclick='event.preventDefault(); this.querySelector("form.logout-form").submit()'>
+                           logout
+                           <form action="{{route('logout')}}" method="POST">
+                              @csrf
+                              <input type="submit" class="hide">
+                           </form>
+                        </a>
+                     @else
+                        <a href="{{route('login')}}" class="list-item">Login</a>
+                        <a href="{{route('register')}}" class="list-item">Register</a>
+                     @endif
+                  </div>
                </li>
                <li>
                   <a href="" class='header-nav-bold'>Orders</a>

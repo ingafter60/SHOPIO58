@@ -124,4 +124,25 @@ a.header-shop span.items-count{
 position:absolute;
 color:orange;
 }
+.header div.a-list{
+    position: absolute;
+    top: 100%;
+    background: #fbfafa;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0;
+    z-index: 3000;
+    display: none;
+}
+.header div.a-list .list-item{
+    display: block;
+    color: #646464;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 4px 4px;
+    font-family: sans-serif;
+}
+.header-nav > li:hover div.a-list{
+    display: block;
+}
 

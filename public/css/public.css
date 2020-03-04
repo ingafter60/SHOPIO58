@@ -24,3 +24,20 @@ form .form-control {
    border-left: none;
 }
 
+.relative{
+   position: relative;
+}
+
+.hide{
+   display: none;
+}
+
+
+/*form .form-control {
+height: 33px;
+border: 1px solid
+#848484;
+border-radius: 3px;
+padding-left: 3px;
+}
+*/
