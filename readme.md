@@ -74,9 +74,9 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 ## BUILDING AN ECOMMERCE 'SHOPIO58' USING LARAVEL V5.8.35
 
 ### 1. Creating the project
-   > composer create-project laravel/laravel="5.8.*" SHOPIO58
-   > git init
-   > git add .
-   > git commit -m "Initial commit: Laravel project 'SHOPIO58' created"
-   > git remote add origin git@github.com:ingafter60/SHOPIO58.git
-   > git push -u origin master
+   > - composer create-project laravel/laravel="5.8.*" SHOPIO58
+   > - git init
+   > - git add .
+   > - git commit -m "Initial commit: Laravel project 'SHOPIO58' created"
+   > - git remote add origin git@github.com:ingafter60/SHOPIO58.git
+   > - git push -u origin master
