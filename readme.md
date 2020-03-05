@@ -161,3 +161,82 @@ The Laravel framework is open-source software licensed under the [MIT license](h
    > - modified:   resources/views/layouts/default.blade.php
    > - new file:   resources/views/partials/footer.blade.php
    > - modified:   readme.md
+
+### 4. Creating User Panel
+
+   #### Part 9 - User Roles
+
+   > - K:\laragon\www\SHOPIO58 (master)
+   > - K:\laragon\www\SHOPIO58 (master)
+   > - λ php artisan make:migration create_roles_table
+   > - Created Migration: 2020_03_05_041839_create_roles_table
+
+   > - K:\laragon\www\SHOPIO58 (master)
+   > - K:\laragon\www\SHOPIO58 (master)
+   > - λ php artisan make:migration create_user_roles_table
+   > - Created Migration: 2020_03_05_042101_create_user_roles_table
+
+   > - K:\laragon\www\SHOPIO58 (master)
+   > - λ php artisan migrate
+   > - Migrating: 2020_03_05_041839_create_roles_table
+   > - Migrated:  2020_03_05_041839_create_roles_table (0.36 seconds)
+   > - Migrating: 2020_03_05_042101_create_user_roles_table
+   > - Migrated:  2020_03_05_042101_create_user_roles_table (1.33 seconds)
+
+   > - K:\laragon\www\SHOPIO58 (master)
+   > - λ php artisan make:model Role
+   > - Model created successfully.
+
+   > - K:\laragon\www\SHOPIO58 (master)
+   > - λ php artisan make:model UserRole
+   > - Model created successfully.
+
+   > - K:\laragon\www\SHOPIO58 (master)
+   > - λ php artisan make:controller UserController
+   > - Controller created successfully.
+
+   > - Database changed
+   > - mysql> show tables;
+   > - +--------------------+
+   > - | Tables_in_shopio58 |
+   > - +--------------------+
+   > - | migrations         |
+   > - | password_resets    |
+   > - | roles              |
+   > - | user_roles         |
+   > - | users              |
+   > - +--------------------+
+   > - 5 rows in set (0.76 sec)
+
+   > - mysql> INSERT INTO roles (role) values ('cudtomer');
+   > - Query OK, 1 row affected (0.83 sec)
+
+   > - mysql> INSERT INTO roles (role) values ('admin');
+   > - Query OK, 1 row affected (0.03 sec)
+
+   > - mysql> INSERT INTO user_roles (userid, roleid) values (1,2);
+   > - Query OK, 1 row affected (0.78 sec)
+
+   > - mysql> INSERT INTO user_roles (userid, roleid) values (1,1);
+   > - Query OK, 1 row affected (0.03 sec)
+
+   > - mysql> SELECT * FROM user_roles;
+   > - +----+--------+--------+------------+------------+
+   > - | id | userId | roleId | created_at | updated_at |
+   > - +----+--------+--------+------------+------------+
+   > - |  1 |      1 |      2 | NULL       | NULL       |
+   > - |  2 |      1 |      1 | NULL       | NULL       |
+   > - +----+--------+--------+------------+------------+
+   > - 2 rows in set (0.00 sec)
+
+
+   > - new file:   app/Http/Controllers/UserController.php
+   > - new file:   app/Models/Role.php
+   > - new file:   app/Models/UserRole.php
+   > - modified:   app/User.php
+   > - new file:   app/UserORI.php
+   > - new file:   database/migrations/2020_03_05_041839_create_roles_table.php
+   > - new file:   database/migrations/2020_03_05_042101_create_user_roles_table.php
+   > - modified:   readme.md
+   > - modified:   resources/views/partials/header.blade.php
+   > - modified:   routes/web.php

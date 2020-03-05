@@ -52,11 +52,13 @@
             <ul class="header-nav multi-line-header-nav">
                <li>
                   <a href="#">
-                  <span class="header-nav-line header-nav-line-1">welcome, Sign in</span>
+                  {{-- <span class="header-nav-line header-nav-line-1">welcome, Sign in</span> --}}
+                  <span class="header-nav-line header-nav-line-1">welcome, {{Auth::check() ? auth()->user()->name: 'sign in'}}</span>
                   <span class="header-nav-line header-nav-line-2">Account & lists <i class="fa fa-caret-down" style="font-size:13px;"></i></span>
                   </a>
                   <div class="a-list">
-                     <a href="" class="list-item">Account</a>
+                     {{-- <a href="" class="list-item">Account</a> --}}
+                     <a href="{{route('account')}}" class="list-item">Account</a>
                      <a href="" class="list-item">Wish list</a>
                      @if(Auth::check())
                         <a href="{{route('logout')}}" class="list-item" onclick='event.preventDefault(); this.querySelector("form.logout-form").submit()'>
