@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/public.css')}}">
     <link rel="stylesheet" href="{{asset('css/grid.css')}}">
     <link rel="stylesheet" href="{{asset('css/header.css')}}">
+    <link rel="stylesheet" href="{{asset('css/footer.css')}}">
     <link rel="stylesheet" href="{{asset('fa/css/all.css')}}">
  </head>
  <body>
@@ -15,5 +16,6 @@
    <div class="main">
     @yield('main')
    </div>
+   @include('partials.footer')
  </body>
 </html>
