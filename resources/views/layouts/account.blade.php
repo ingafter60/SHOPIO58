@@ -10,12 +10,27 @@
    <link rel="stylesheet" href="{{asset('css/header.css')}}">
    <link rel="stylesheet" href="{{asset('fa/css/all.css')}}">
    <link rel="stylesheet" href="{{asset('css/footer.css')}}">
+   <link rel="stylesheet" href="{{asset('css/account.css')}}">
 </head>
 <body>
    @include('partials.header')
-   <div class="main">
-   @yield('main')
+   <div class="main account-main cf">
+      <div class="left account-sidebar">
+         <div class="row">
+            <div class="col col-12">
+               @include('partials.account-sidebar')
+            </div>
+         </div>
+      </div>
+      <div class="left account-main-content">
+         <div class="row">
+            <div class="col col-12">
+               @yield('main')
+            </div>
+         </div>
+      </div>
    </div>
    @include('partials.footer')
 </body>
 </html>
+

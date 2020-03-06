@@ -1,0 +1,17 @@
+BUILDING AN ECOMMERCE 'SHOPIO58' USING LARAVEL V5.8.35
+======================================================
+
+1. Creating the project
+   > https://github.com/ingafter60/SHOPIO58/commit/c5a152e12eacd321c56005fdfebc01ad792ada8f
+
+2. Modify the app and create user authentication
+   > https://github.com/ingafter60/SHOPIO58/commit/4b3fa16425ced6e3e99560f0d6de11e4a2a95e98
+
+3. Creating Header and Footer
+   3. Creating Header and Footer: create header part 1
+      > https://github.com/ingafter60/SHOPIO58/commit/ea0934a123d3c9b72c42c684e2b4d9fbbd94f658
+   3. Creating Header and Footer: create footer part 1 & 2
+      > https://github.com/ingafter60/SHOPIO58/commit/712e532de52072a6df652b301f758b569042bb38
+
+4. User Panel - 1. Part 9. Roles
+   > https://github.com/ingafter60/SHOPIO58/commit/683231ce8e50377c296e1ea980cd450810e4d315

@@ -146,3 +146,16 @@ color:orange;
     display: block;
 }
 
+* {
+   box-sizing: border-box;
+   outline: none;
+}
+
+form .form-control {
+   height: 33px;
+   border: 1px solid #ccc;
+   border-left-color: rgb(204, 204,204);
+   border-left-style: solid;
+   border-left: none;
+}
+
